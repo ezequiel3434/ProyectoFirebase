@@ -189,6 +189,7 @@
 				37F603C724AA922A008D2222 /* Frameworks */,
 				37F603C824AA922A008D2222 /* Resources */,
 				F74C89D8F71D8ACDE1931825 /* [CP] Embed Pods Frameworks */,
+				DB77165BA098816A6895A562 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +228,7 @@
 				37F603E824AA922B008D2222 /* Frameworks */,
 				37F603E924AA922B008D2222 /* Resources */,
 				628C7CAE62187384389CC39C /* [CP] Embed Pods Frameworks */,
+				DD37169A618E358EAB20A9D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,6 +394,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB77165BA098816A6895A562 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase/Pods-ProyectoFirebase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase/Pods-ProyectoFirebase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase/Pods-ProyectoFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD37169A618E358EAB20A9D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase-ProyectoFirebaseUITests/Pods-ProyectoFirebase-ProyectoFirebaseUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase-ProyectoFirebaseUITests/Pods-ProyectoFirebase-ProyectoFirebaseUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoFirebase-ProyectoFirebaseUITests/Pods-ProyectoFirebase-ProyectoFirebaseUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F74C89D8F71D8ACDE1931825 /* [CP] Embed Pods Frameworks */ = {

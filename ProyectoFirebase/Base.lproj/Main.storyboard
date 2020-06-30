@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kna-8L-mYn">
-                                <rect key="frame" x="16" y="104" width="382" height="136"/>
+                                <rect key="frame" x="16" y="104" width="382" height="232"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viU-3a-tXb">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
@@ -56,6 +56,28 @@
                                             <constraint firstAttribute="height" constant="40" id="TrE-8z-YN9"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-Td-kVa">
+                                        <rect key="frame" x="0.0" y="144" width="382" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Google" image="icons8-logo-de-google-97">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQT-pu-VCD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-ac-mQc">
+                                        <rect key="frame" x="0.0" y="192" width="382" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Facebook" image="icons8-facebook-48">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLB-0f-B3O"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -69,7 +91,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="XVm-IV-CRQ"/>
                     <connections>
+                        <outlet property="authStackView" destination="kna-8L-mYn" id="fFX-iG-dXi"/>
                         <outlet property="emailTextField" destination="viU-3a-tXb" id="F6V-4o-vxP"/>
+                        <outlet property="facebookButton" destination="0tr-ac-mQc" id="Mud-jJ-y0E"/>
+                        <outlet property="googleButton" destination="M5K-Td-kVa" id="uLw-aa-XMm"/>
                         <outlet property="loginButton" destination="64W-R7-nBM" id="IIw-2F-HvB"/>
                         <outlet property="passwordTextField" destination="tDg-v9-0lN" id="0D5-9B-hXi"/>
                         <outlet property="signUpButton" destination="B70-oj-w9b" id="9CA-QQ-Aqk"/>
@@ -98,4 +123,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-facebook-48" width="48" height="48"/>
+        <image name="icons8-logo-de-google-97" width="48" height="48"/>
+    </resources>
 </document>
