@@ -77,6 +77,7 @@ class AuthViewController: UIViewController {
         loginManager.logIn(permissions: [.email], viewController: self) { (result) in
             switch result{
                 
+                
             case .success(granted: let granted, declined: let declined, token: let token):
                 
                 let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
