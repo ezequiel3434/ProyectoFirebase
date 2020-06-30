@@ -37,6 +37,9 @@
                                                 <state key="normal" title="Registrar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5mD-x3-kfC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64W-R7-nBM">
                                                 <rect key="frame" x="195" y="0.0" width="187" height="40"/>
@@ -44,6 +47,9 @@
                                                 <state key="normal" title="Acceder">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7o-oe-dJp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -62,59 +68,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="XVm-IV-CRQ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="viU-3a-tXb" id="F6V-4o-vxP"/>
+                        <outlet property="loginButton" destination="64W-R7-nBM" id="IIw-2F-HvB"/>
+                        <outlet property="passwordTextField" destination="tDg-v9-0lN" id="0D5-9B-hXi"/>
+                        <outlet property="signUpButton" destination="B70-oj-w9b" id="9CA-QQ-Aqk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="122.54464285714285"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="DHe-Sy-wna">
-            <objects>
-                <viewController id="1gg-wE-p2c" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Byg-9X-Vlh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-6n-PzR">
-                                <rect key="frame" x="16" y="60" width="382" height="136"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyb-wC-nmx">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQP-GY-IcE">
-                                        <rect key="frame" x="0.0" y="48" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54t-nT-G1w">
-                                        <rect key="frame" x="0.0" y="96" width="382" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="A7j-Oj-iHv"/>
-                                        </constraints>
-                                        <state key="normal" title="Cerrar sesión">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="b4l-6n-PzR" firstAttribute="top" secondItem="qLG-t4-pcH" secondAttribute="top" constant="16" id="BZY-sT-Cv7"/>
-                            <constraint firstItem="qLG-t4-pcH" firstAttribute="trailing" secondItem="b4l-6n-PzR" secondAttribute="trailing" constant="16" id="EbB-xA-fEL"/>
-                            <constraint firstItem="b4l-6n-PzR" firstAttribute="leading" secondItem="qLG-t4-pcH" secondAttribute="leading" constant="16" id="jap-jR-JxA"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="qLG-t4-pcH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6K8-73-zdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1859" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wVx-d7-GY6">

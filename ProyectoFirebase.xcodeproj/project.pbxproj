@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BE668DA5C564240E5F07D2A /* Pods_ProyectoFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447D1B802098FDCDD6B9309F /* Pods_ProyectoFirebaseTests.framework */; };
 		3744B2FC24AAB1BE0034F915 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3744B2FB24AAB1BE0034F915 /* HomeViewController.swift */; };
+		3744B2FE24AABC650034F915 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3744B2FD24AABC650034F915 /* HomeViewController.xib */; };
 		37F603CE24AA922A008D2222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F603CD24AA922A008D2222 /* AppDelegate.swift */; };
 		37F603D024AA922A008D2222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F603CF24AA922A008D2222 /* SceneDelegate.swift */; };
 		37F603D224AA922A008D2222 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F603D124AA922A008D2222 /* AuthViewController.swift */; };
@@ -43,6 +44,7 @@
 		04135A1DA0092E0A254304C2 /* Pods_ProyectoFirebase_ProyectoFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoFirebase_ProyectoFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1782D6BC4370D0168635183A /* Pods-ProyectoFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFirebase.release.xcconfig"; path = "Target Support Files/Pods-ProyectoFirebase/Pods-ProyectoFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		3744B2FB24AAB1BE0034F915 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3744B2FD24AABC650034F915 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		37F603CA24AA922A008D2222 /* Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F603CD24AA922A008D2222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F603CF24AA922A008D2222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				37F603DB24AA922B008D2222 /* Info.plist */,
 				37F603FD24AA9E40008D2222 /* GoogleService-Info.plist */,
 				3744B2FB24AAB1BE0034F915 /* HomeViewController.swift */,
+				3744B2FD24AABC650034F915 /* HomeViewController.xib */,
 			);
 			path = ProyectoFirebase;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				37F603DA24AA922B008D2222 /* LaunchScreen.storyboard in Resources */,
 				37F603FE24AA9E40008D2222 /* GoogleService-Info.plist in Resources */,
+				3744B2FE24AABC650034F915 /* HomeViewController.xib in Resources */,
 				37F603D724AA922B008D2222 /* Assets.xcassets in Resources */,
 				37F603D524AA922A008D2222 /* Main.storyboard in Resources */,
 			);
